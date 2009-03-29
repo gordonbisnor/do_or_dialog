@@ -17,3 +17,6 @@ How It Works:
 - Modal window has a dialog box inside of it with your message and yes / no buttons
 - The “No” button removes the pseudo-“modal window” 
 - The “Yes” button redirects to the page specified by href
+
+Demo:
+http://www.isnorcreative.com/blog/22

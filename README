@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------------------------------
+Do Or Dialog - March  29, 2009 / Gordon B. Isnor  - http://www.isnorcreative.com
+-------------------------------------------------------------------------------------------------------
+A simple alternative to standard javascript confirms
+
+Features: 
+-------------------------------------------------------------------------------------------------------
+- Easy to customize css and image to produce custom dialog boxes
+- Uses Prototype and Scriptaculous
+
+How It Works:
+-------------------------------------------------------------------------------------------------------
+<a href='http://www.isnorcreative.com' onclick='return do_or_dialog(this,"Are you sure?")'>Click Me</a>
+
+- Gets the href attribute from the element passed in first argument
+- Appends a pseudo “modal window” - static-positioned gray box, full height and width, z-index 999
+- Modal window has a dialog box inside of it with your message and yes / no buttons
+- The “No” button removes the pseudo-“modal window” 
+- The “Yes” button redirects to the page specified by href

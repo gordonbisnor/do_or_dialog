@@ -1,13 +1,47 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<script type='text/javascript' src='public/javascript/prototype.js'></script>
 	<script type='text/javascript' src='public/javascript/scriptaculous.js?load=effects'></script>
 	<script type='text/javascript' src='public/javascript/do_or_dialog.js'></script>
 	<link rel="stylesheet" href="public/stylesheets/do_or_dialog.css">
 </head>
 <body>
+
+	<h1>Do Or Dialog</h1>
+
+	<p>A simple alternative to standard javascript confirms</p>
+
+	<h2 id="features_">Features: </h2>
+
+	<ul>
+	<li>Easy to customize css and image to produce custom dialog boxes</li>
+	<li>Uses Prototype and Scriptaculous</li>
+	</ul>
+
+	<h2 id="how_it_works">How It Works:</h2>
+	<code>
+	&lt;a href='http://www.isnorcreative.com' onclick='return do_or_dialog(this,"Are you sure?")'&gt;Click Me&lt;/a&gt;
+	</code>
+
+	<ul>
+	<li>Gets the href attribute from the element passed in first argument</li>
+	<li>Appends a pseudo “modal window” - static-positioned gray box, full height and width, z-index 999</li>
+	<li>Modal window has a dialog box inside of it with your message and yes / no buttons</li>
+	<li>The “No” button removes the pseudo-“modal window” </li>
+	<li>The “Yes” button redirects to the page specified by href</li>
+	</ul>
+
+	<p>Get it:</p>
+	<code>git clone git://github.com/gordonbisnor/do_or_dialog.git</code>
+
+	<h2>Demo:</h2>
+		
 	<p>
 		<a href='http://www.isnorcreative.com' onclick='return do_or_dialog(this,"Are you sure?")'>Click Me</a>
-	</p>
+	</p> 
+	
 </body>
 </html>
